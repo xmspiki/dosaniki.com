@@ -76,22 +76,6 @@ strong {
   font-size: 24px;
 }
 
-
-/* ----------------- */
-/* Szakaszok */
-/* ----------------- */
-.container {
-  max-width: var(--def-site-width);
-  margin: 0 auto;
-}
-
-/* Kötőjelezés */
-.sec-hyp {
-  -webkit-hyphens: auto;
-  -ms-hyphens: auto;
-  hyphens: auto;
-}
-
 /* Elválasztók */
 .elvalaszto {
   background: url("../img/rip1.svg") bottom;
@@ -108,9 +92,20 @@ strong {
   background-color: var(--def-section2-color);
 }
 
-.elvalaszto4 {
-  background: url("../img/rip2.svg") top;
-  background-color: var(--def-section1-color);
+
+/* ----------------- */
+/* Szakaszok */
+/* ----------------- */
+.container {
+  max-width: var(--def-site-width);
+  margin: 0 auto;
+}
+
+/* Kötőjelezés */
+.sec-hyp {
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
 }
 
 /* Section2 */
@@ -223,7 +218,7 @@ footer {
 @media only screen and (max-width: 576px) {
   #intro {
     background-image: url("../img/dosaniki_bg_sm.jpg");
-    height: 400px;
+    height: auto;
     padding-top: 20px;
   }
 
@@ -236,10 +231,14 @@ footer {
     justify-content: flex-end;
   }
 
-  .alcim > div {
+  .alcim>div {
     margin-top: -10px;
     width: 180px;
     font-size: 18px;
+    text-align: center;
+  }
+
+  .sec-btn {
     text-align: center;
   }
 }
