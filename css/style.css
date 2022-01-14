@@ -19,6 +19,11 @@
   box-sizing: border-box;
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
 html {
   background-color: #ffffff;
 }
@@ -63,9 +68,9 @@ strong {
 #intro {
   background-image: url("../img/dosaniki_bg.jpg");
   background-repeat: no-repeat;
-  background-size: 100%;
   background-position: left top;
   background-attachment: fixed;
+  background-size: 100%;
   width: 100vw;
   height: 100vh;
   padding-top: 100px;
