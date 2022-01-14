@@ -141,7 +141,7 @@ strong {
 }
 
 /* Section3 */
-.sec-mobile-btn {
+#mobile-need {
   display: none;
 }
 
@@ -238,7 +238,21 @@ footer {
     text-align: center;
   }
 
-  .sec-btn {
+/* Szakaszok */
+
+/* Section2 */
+  #need {
     text-align: center;
   }
+
+  /* Section3 */
+  #no-need {
+    display: none;
+  }
+
+  #mobile-need {
+    display: inline;
+  }
+
+
 }
