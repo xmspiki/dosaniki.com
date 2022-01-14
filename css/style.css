@@ -184,7 +184,6 @@ strong {
   display: inline-block;
   margin-left: -2em;
   margin-right: 0.5em;
-  
   width: 28px;
   height: 28px;
   font-size: 18px;
@@ -214,4 +213,33 @@ footer {
   text-align: center;
   padding-top: 16px;
   padding-bottom: 16px;
+}
+
+
+
+/* ---------------------- */
+/* Media queries */
+/* ---------------------- */
+@media only screen and (max-width: 576px) {
+  #intro {
+    background-image: url("../img/dosaniki_bg_sm.jpg");
+    height: 400px;
+    padding-top: 20px;
+  }
+
+  h1 {
+    font-size: calc(var(--def-h1) - 16px);
+  }
+
+  .alcim {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .alcim > div {
+    margin-top: -10px;
+    width: 180px;
+    font-size: 18px;
+    text-align: center;
+  }
 }
