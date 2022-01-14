@@ -233,9 +233,10 @@ footer {
 
   .alcim>div {
     margin-top: -10px;
-    width: 180px;
-    font-size: 18px;
+    width: 240px;
+    font-size: 16px;
     text-align: center;
+    margin-bottom: 80px;
   }
 
   /* Szakaszok */
