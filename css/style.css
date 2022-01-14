@@ -1,0 +1,217 @@
+/* ------------------------- */
+/* Alapbeállítások */
+/* ------------------------- */
+:root {
+  --def-site-width: 1150px;
+  --def-text-color: #555;
+  --def-font-size: 20px;
+  --def-h1: 48px;
+  --def-h2: 36px;
+  --def-h3: 28px;
+  --def-section1-color: #ffffff;
+  --def-section2-color: #f7efeb;
+  --def-button-color: #7b3f37;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #ffffff;
+}
+
+body {
+  color: var(--def-text-color);
+  font-family: "Roboto", sans-serif;
+  font-size: var(--def-font-size);
+  font-weight: 300;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.25;
+  margin-bottom: 0.45em;
+  font-weight: 300;
+}
+
+h1 {
+  font-size: var(--def-h1);
+}
+
+h2 {
+  font-size: var(--def-h2);
+}
+
+h3 {
+  font-size: var(--def-h3);
+}
+
+strong {
+  font-weight: 700;
+}
+
+
+/* -------------------------- */
+/* Kezdő képernyő */
+/* -------------------------- */
+#intro {
+  background-image: url("../img/dosaniki_bg.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: left top;
+  background-attachment: fixed;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 20px;
+}
+
+/* Alcím */
+.alcim {
+  font-size: 24px;
+}
+
+
+/* ----------------- */
+/* Szakaszok */
+/* ----------------- */
+.container {
+  max-width: var(--def-site-width);
+  margin: 0 auto;
+}
+
+/* Kötőjelezés */
+.sec-hyp {
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+}
+
+/* Elválasztók */
+.elvalaszto {
+  background: url("../img/rip1.svg") bottom;
+  background-color: var(--def-section2-color);
+}
+
+.elvalaszto2 {
+  background: url("../img/rip2.svg") top;
+  background-color: var(--def-section2-color);
+}
+
+.elvalaszto3 {
+  background: url("../img/rip3.svg") top;
+  background-color: var(--def-section2-color);
+}
+
+.elvalaszto4 {
+  background: url("../img/rip2.svg") top;
+  background-color: var(--def-section1-color);
+}
+
+/* Section2 */
+.fa-ul i {
+  display: flex;
+  background-color: var(--def-text-color);
+  color: var(--def-section2-color);
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+}
+
+.fa-ul li {
+  margin-bottom: 10px;
+  margin-left: -10px;
+  padding-left: 5px;
+}
+
+.sec-btn {
+  font-size: 14px;
+  background-color: var(--def-button-color);
+  color: var(--def-section2-color);
+}
+
+.sec-btn:hover {
+  font-size: 14px;
+  background-color: var(--def-section2-color);
+  color: var(--def-button-color);
+  border: 1px solid var(--def-button-color);
+}
+
+/* Section3 */
+.sec-mobile-btn {
+  display: none;
+}
+
+/* Section6 */
+.sec6-pic {
+  width: 68%;
+}
+
+/* Section8 */
+.circle {
+  width: 56px;
+  height: 56px;
+  background-color: var(--def-text-color);
+  color: var(--def-section2-color);
+  border-radius: 50%;
+  text-align: center;
+  align-items: center;
+  padding-top: 14px;
+  font-size: 28px;
+}
+
+/* Section9 */
+.sec9-pic {
+  width: 350px;
+  margin-bottom: 2rem;
+}
+
+/* Section12 */
+#section12 ol {
+  list-style: none;
+  counter-reset: li;
+}
+
+#section12 li:before {
+  display: inline-block;
+  margin-left: -2em;
+  margin-right: 0.5em;
+  
+  width: 28px;
+  height: 28px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: var(--def-text-color);
+  color: var(--def-section2-color);
+  border-radius: 50%;
+  text-align: center;
+  align-items: center;
+  direction: rtl;
+  content: counter(li);
+}
+
+#section12 li {
+  counter-increment: li;
+  margin-bottom: 10px;
+}
+
+
+/* ----------- */
+/* Lábléc */
+/* ----------- */
+footer {
+  background-color: rgb(3, 95, 74);
+  color: #ffffff;
+  font-size: 14px;
+  text-align: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
